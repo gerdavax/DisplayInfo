@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">DisplayInfo</string>
+    <string name="size">unknown</string>
+    <string name="orientation">portrait</string>
+
+</resources>

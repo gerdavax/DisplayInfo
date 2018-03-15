@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- The main fragment_display view -->
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include layout="@layout/fragment_display" />
+        </FrameLayout>
+        <!-- The navigation drawer -->
+
+<!-- 
+        <LinearLayout
+            android:id="@+id/left_drawer"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="8dp" >
+
+            <ToggleButton
+                android:id="@+id/toggle_actionbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textOff="ActionBar"
+                android:textOn="ActionBar" />
+
+            <ToggleButton
+                android:id="@+id/toggle_orientation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textOff="Force landscape"
+                android:textOn="Force portrait" />
+
+            <Button
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:visibility="gone" />
+        </LinearLayout>
+ -->
+ 
+        <ListView
+            android:id="@+id/font_drawer"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#555"
+            android:orientation="vertical" />
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
